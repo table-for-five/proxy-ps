@@ -5,12 +5,13 @@
 #CountDown {
   margin-left: 5px;
   display: inline-block;
-}
+}*/
 
-#Related {
-  margin: 10%;
+#Menu {
+  padding-top: 600px;
+  margin-left: 280px;
   display: block;
-} */
+}
 
 #Header {
   position: relative;

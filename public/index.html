@@ -11,11 +11,13 @@
       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
   <body>
-    <!-- <div id="Menu"></div>
-    <div id="Reservation"></div> -->
+    <!-- <div id="Reservation"></div> -->
     <div id="Overview"></div>
     <div id="Header"></div>
+    <!-- <div style='margin-top:400px'></div> -->
+    <div id="Menu"></div>
     <!-- <div id="Photos"></div> -->
+
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
@@ -23,7 +25,7 @@
     <!-- <script src="http://localhost:3000/react-framework-master/client/dist/bundle.js"></script> -->
     <script src="http://localhost:3000/bundle.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
-    <!-- <script src="http://localhost:3004/app.js"></script> -->
+    <script src="http://localhost:3030/bundle.js"></script>
 
 
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
@@ -36,10 +38,10 @@
         React.createElement(Header),
         document.getElementById('Header')
       );
-      // ReactDOM.render(
-      //   React.createElement(Related),
-      //   document.getElementById('Related')
-      // );
+      ReactDOM.render(
+        React.createElement(Menu),
+        document.getElementById('Menu')
+      );
       // ReactDOM.render(
       //   React.createElement(Reviews),
       //   document.getElementById('Reviews')
