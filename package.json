@@ -1,17 +1,22 @@
 {
-  "name": "",
-  "version": "",
+  "name": "proxy-ps",
+  "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "",
-  "engines": {
-    "node": ">=6.13.0"
-  },
+  "main": "index.js",
   "scripts": {
+    "start": "nodemon ./server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/table-for-five/proxy-ps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/table-for-five/proxy-ps/issues"
+  },
+  "homepage": "https://github.com/table-for-five/proxy-ps#readme",
   "dependencies": {
-  },
-  "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
   }
 }
