@@ -2,38 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>FEC Demo</title>
+    <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
   <body>
-    <div id="Info"></div>
-    <div id="CountDown"></div>
-    <div id="Related"></div>
-    <div id="Reviews"></div>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script>
+    <!-- <div id="Menu"></div>
+    <div id="Reservation"></div> -->
+    <div id="Overview"></div>
+    <div id="Header"></div>
+    <!-- <div id="Photos"></div> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+    
+    <!-- <script src="http://localhost:3000/react-framework-master/client/dist/bundle.js"></script> -->
+    <script src="http://localhost:3000/bundle.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <!-- <script src="http://localhost:3004/app.js"></script> -->
+
+
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
-        React.createElement(Info),
-        document.getElementById('Info')
+        React.createElement(Overview),
+        document.getElementById('Overview')
       );
       ReactDOM.render(
-        React.createElement(CountDown),
-        document.getElementById('CountDown')
+        React.createElement(Header),
+        document.getElementById('Header')
       );
-      ReactDOM.render(
-        React.createElement(Related),
-        document.getElementById('Related')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('Reviews')
-      );
+      // ReactDOM.render(
+      //   React.createElement(Related),
+      //   document.getElementById('Related')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('Reviews')
+      // );
     </script>
   </body>
 </html>

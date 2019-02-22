@@ -1,4 +1,4 @@
-#Info {
+/* #Info {
   display: block;
 }
 
@@ -10,4 +10,13 @@
 #Related {
   margin: 10%;
   display: block;
+} */
+
+#Header {
+  position: relative;
+  margin-left: -300px;
+}
+
+#Overview {
+  margin-top: 600px;
 }
